@@ -1,7 +1,7 @@
 import View from './view.js';
 //import icons from '../img/icons.svg'; // parcel 1
 import icons from 'url:../../img/icons.svg'; // parcel 2
-import { Fraction } from 'fractional';
+import { Fraction } from 'url:fractional';
 
 class RecipeView extends View {
   _parentElement = document.querySelector('.recipe');
@@ -95,7 +95,6 @@ class RecipeView extends View {
       <h2 class="heading--2">Recipe ingredients</h2>
       <ul class="recipe__ingredient-list">
         ${this._data.ingredients.map(this._generateMarkupIngredient).join('')}
-
       
 
         
